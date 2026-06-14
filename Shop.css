@@ -1,0 +1,198 @@
+:root {
+    --bg: #F5EFE6;
+    --bg2: #EDE0CC;
+    --cream: #FAF6F0;
+    --terra: #C0634A;
+    --terra-h: #6B4C3B;
+    --terra-l: #D9856E;
+    --olive: #5C6B3A;
+    --olive-l: #7A8C50;
+    --brown: #2E1F14;
+    --brown-m: #6B4C3B;
+    --brown-s: #7A6252;
+    --border: #D9C9B5;
+    --font-h: 'Playfair Display', serif;
+    --font-b: 'DM Sans', sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: var(--bg);
+    font-family: var(--font-b);
+    font-weight: 300;
+    overflow-x: hidden;
+} 
+ ul {
+       display: flex;
+       list-style-type: none;
+       gap: 3.0rem;
+   }
+
+   ul li a {
+       text-decoration: none;
+       font-size: 16px;
+       color: var(--brown-s);
+   }
+
+   .head {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       padding-left: 19px;
+       position: fixed;
+       height: 70px;
+       width: 100%;
+       background-color: var(--bg);
+       border-bottom: 1px solid var(--border);
+       z-index: 1000;
+   }
+
+   .Dobaara {
+       color: var(--terra);
+       font-size: 2.3rem;
+   }
+   .cart-badge{
+    position: absolute;
+    top: 16px;
+    right: 282px;
+    background: var(--terra);
+    color: #fff;
+    font-size: 10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+   }
+   .signup {
+       border-radius: 25px;
+       background-color: var(--terra);
+       color: var(--bg);
+       padding: 8px;
+       margin: 15px;
+       border: 1px solid var(--terra);
+   }
+
+   .signup:hover {
+       background-color: var(--terra-h);
+       border: 1px solid var(--terra-h);
+       cursor: pointer;
+       transform: translateY(-3px);
+   }
+
+   .login {
+       border-radius: 25px;
+       border: 1px solid var(--terra);
+       color: var(--terra);
+       padding: 8px;
+       background-color: var(--bg);
+   }
+
+   .login:hover {
+       background-color: var(--terra);
+       color: var(--bg);
+       transform: translateY(-3px);
+       cursor: pointer;
+   }
+
+   #container {
+       display: flex;
+       height: 630px;
+       font-family: 'DM Sans', sans-serif;
+       font-size: 12px;
+       font-weight: 500;
+   }
+
+   #shopnow {
+       background-color: var(--terra);
+       color: var(--bg);
+       border: 1px solid var(--terra);
+       border-radius: 25px;
+       padding: 8px;
+       width: 120px;
+   }
+
+   #shopnow:hover {
+       background-color: var(--terra-h);
+       border: 1px solid var(--terra-h);
+       cursor: pointer;
+       transform: translateY(-3px);
+   }
+
+   #sellclothes {
+       background-color: var(--bg);
+       color: var(--terra);
+       border: 1px solid var(--terra);
+       border-radius: 25px;
+       padding: 8px;
+   }
+
+   #sellclothes:hover {
+       background-color: var(--terra);
+       color: var(--bg);
+       transform: translateY(-3px);
+       cursor: pointer;
+   }
+   .filter-panel{
+    background-color: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    position: sticky;
+    height: fit-content;
+   }
+   .filter-grp-title{
+    font-size: 12px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--brown-s);
+    font-weight: 500;
+    margin-bottom: 10px;
+   }
+   .filter-chips{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+   }
+   .chip{
+    padding: 6px 14px;
+    border-radius: 9999px;
+    font-size: 12px;
+    border: 1px solid var(--border);
+    color: var(--brown-s);
+    cursor: pointer;
+    background-color: var(--bg);
+   }
+   .chip:hover{
+    background-color: var(--terra);
+    color: #fff;
+    border-color: var(--terra);
+   }
+   .price-range{
+    display: flex;
+    gap: 20px;
+   }
+   .price-input{
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    width: 80px;
+   }
+   .button-change{
+    margin-top: 15px;
+    padding: 10px 24px;
+    border-radius: 9999px;
+    font-family: var(--font-b);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    width: 100%;
+    background: var(--terra);
+    color: #fff;
+   }
