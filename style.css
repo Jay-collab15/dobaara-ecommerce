@@ -79,7 +79,7 @@
        background-color: var(--terra-h);
        border: 1px solid var(--terra-h);
        cursor: pointer;
-       transform: translateY(-3px);
+       transform: translateY(-1px);
    }
 
    .login {
@@ -93,7 +93,7 @@
    .login:hover {
        background-color: var(--terra);
        color: var(--bg);
-       transform: translateY(-3px);
+       transform: translateY(-1px);
        cursor: pointer;
    }
 
@@ -118,7 +118,7 @@
        background-color: var(--terra-h);
        border: 1px solid var(--terra-h);
        cursor: pointer;
-       transform: translateY(-3px);
+       transform: translateY(-1px);
    }
 
    #sellclothes {
@@ -132,7 +132,7 @@
    #sellclothes:hover {
        background-color: var(--terra);
        color: var(--bg);
-       transform: translateY(-3px);
+       transform: translateY(-1px);
        cursor: pointer;
    }
    .two::before{
