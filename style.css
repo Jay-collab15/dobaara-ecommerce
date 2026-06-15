@@ -312,7 +312,7 @@
    }
    .prod-name{
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--brown);
     margin-bottom: 4px;
    }
@@ -447,4 +447,4 @@
    }
    .social-btn:hover{
     background-color: var(--terra);
-   }
+   } 
