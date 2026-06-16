@@ -81,7 +81,7 @@ body{
        background-color: var(--terra-h);
        border: 1px solid var(--terra-h);
        cursor: pointer;
-       transform: translateY(-3px);
+       transform: translateY(-1px);
    }
 
    .login {
@@ -95,46 +95,7 @@ body{
    .login:hover {
        background-color: var(--terra);
        color: var(--bg);
-       transform: translateY(-3px);
-       cursor: pointer;
-   }
-
-   #container {
-       display: flex;
-       height: 630px;
-       font-family: 'DM Sans', sans-serif;
-       font-size: 12px;
-       font-weight: 500;
-   }
-
-   #shopnow {
-       background-color: var(--terra);
-       color: var(--bg);
-       border: 1px solid var(--terra);
-       border-radius: 25px;
-       padding: 8px;
-       width: 120px;
-   }
-
-   #shopnow:hover {
-       background-color: var(--terra-h);
-       border: 1px solid var(--terra-h);
-       cursor: pointer;
-       transform: translateY(-3px);
-   }
-
-   #sellclothes {
-       background-color: var(--bg);
-       color: var(--terra);
-       border: 1px solid var(--terra);
-       border-radius: 25px;
-       padding: 8px;
-   }
-
-   #sellclothes:hover {
-       background-color: var(--terra);
-       color: var(--bg);
-       transform: translateY(-3px);
+       transform: translateY(-1px);
        cursor: pointer;
    }
    .filter-panel{
