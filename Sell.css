@@ -86,7 +86,7 @@ ul li a {
     background-color: var(--terra-h);
     border: 1px solid var(--terra-h);
     cursor: pointer;
-    transform: translateY(-3px);
+    transform: translateY(-1px);
 }
 
 .login {
@@ -100,34 +100,9 @@ ul li a {
 .login:hover {
     background-color: var(--terra);
     color: var(--bg);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
     cursor: pointer;
 }
-
-#container {
-    display: flex;
-    height: 630px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-}
-
-#shopnow {
-    background-color: var(--terra);
-    color: var(--bg);
-    border: 1px solid var(--terra);
-    border-radius: 25px;
-    padding: 8px;
-    width: 120px;
-}
-
-#shopnow:hover {
-    background-color: var(--terra-h);
-    border: 1px solid var(--terra-h);
-    cursor: pointer;
-    transform: translateY(-3px);
-}
-
 .section-hero {
     margin: auto;
     padding: 60px;
