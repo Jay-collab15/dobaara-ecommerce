@@ -1,0 +1,232 @@
+:root {
+    --bg: #F5EFE6;
+    --bg2: #EDE0CC;
+    --cream: #FAF6F0;
+    --terra: #C0634A;
+    --terra-h: #6B4C3B;
+    --terra-l: #D9856E;
+    --olive: #5C6B3A;
+    --olive-l: #7A8C50;
+    --brown: #2E1F14;
+    --brown-m: #6B4C3B;
+    --brown-s: #7A6252;
+    --border: #D9C9B5;
+    --font-h: 'Playfair Display', serif;
+    --font-b: 'DM Sans', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: var(--bg);
+    font-family: var(--font-b);
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 3.0rem;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--brown-s);
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 19px;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+}
+
+.Dobaara {
+    color: var(--terra);
+    font-size: 2.3rem;
+}
+
+.cart-badge {
+    position: absolute;
+    top: 16px;
+    right: 282px;
+    background: var(--terra);
+    color: #fff;
+    font-size: 10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.signup {
+    border-radius: 25px;
+    background-color: var(--terra);
+    color: var(--bg);
+    padding: 8px;
+    margin: 15px;
+    border: 1px solid var(--terra);
+}
+
+.signup:hover {
+    background-color: var(--terra-h);
+    border: 1px solid var(--terra-h);
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+.login {
+    border-radius: 25px;
+    border: 1px solid var(--terra);
+    color: var(--terra);
+    padding: 8px;
+    background-color: var(--bg);
+}
+
+.login:hover {
+    background-color: var(--terra);
+    color: var(--bg);
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+.back{
+    background-color: var(--bg2);
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 80px;
+    align-items: center;
+}
+.heading{
+    font-family: var(--font-h);
+    font-size: 3vw;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+.para{
+    color: var(--brown-s);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+.right{
+    background-color: var(--cream);
+    height: 380px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.items{
+    background-color: var(--cream);
+    padding: 25px;
+    border-radius: 25px;
+    border-left: 5px solid var(--terra);
+}
+.item-one{
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+.item-two{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.item-three{
+    font-size: 14px;
+    color: var(--brown-s);
+    line-height: 1.7;
+}
+footer{
+    background: var(--brown);
+    color: var(--bg);
+    padding: 48px 80px;
+   }
+   .logo{
+    font-family: var(--font-h);
+    font-size: 24px;
+    color: var(--terra-l);
+    margin-bottom: 12px;
+   }
+   .logo span{
+    color: var(--olive-l);
+    font-style: italic;
+   }
+   .desc{
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 260px;
+   }
+   .foot-grid{
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+   }
+   .foot-col-title{
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .1em;
+    opacity: .5;
+    margin-bottom: 14px;
+   }
+   .foot-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+   .foot-links a{
+    font-size: 14px;
+    opacity: .7;
+    color: var(--bg);
+    text-decoration: none;
+    cursor: pointer;
+   }
+   .foot-links a:hover{
+    opacity: 1;
+   }
+   .foot-bottom{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(245, 239, 230, .1);
+    padding-top: 24px;
+   }
+   .foot-social{
+    display: flex;
+    gap: 10px;
+   }
+   .social-btn{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(245, 239, 230, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+   }
+   .social-btn:hover{
+    background-color: var(--terra);
+   } 
