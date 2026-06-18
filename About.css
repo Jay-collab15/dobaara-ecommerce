@@ -59,11 +59,11 @@ ul li a {
 
 .cart-badge {
     position: absolute;
-    top: 16px;
-    right: 282px;
+    top: -9px;
+    right: 9px;
     background: var(--terra);
     color: #fff;
-    font-size: 10px;
+    font-size: 9px;
     width: 14px;
     height: 14px;
     border-radius: 50%;
