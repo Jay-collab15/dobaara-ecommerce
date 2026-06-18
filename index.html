@@ -19,7 +19,7 @@
                 <li><a href="About.html">About</a></li>
             </ul>
             <div class="button">
-                <div style="display: inline;font-size: larger;padding-right: 15px;cursor: pointer;">🛒<span class="cart-badge">0</span></div>
+                <div style="display: inline;font-size: larger;padding-right: 15px;cursor: pointer;position: relative;">🛒<span class="cart-badge">0</span></div>
                 <button class="login">Login</button>
                 <button class="signup">Sign Up</button>
             </div>
@@ -34,15 +34,16 @@
             <p class="animationinone" id="dobaara">Dobaara collects quality second-hand clothing and brings it <br>to
                 you — handpicked, cleaned, and priced honestly. Because<br> style shouldn't cost the earth.</p>
             <div class="animationinone" style="animation-delay: 0.2s; padding-top: 18px;">
-                <button id="shopnow">Shop Now &#8594;</button>
-                <button id="sellclothes">Sell Your Clothes</button>
+                <button id="shopnow" onclick="window.location.href='Shop.html' ">Shop Now &#8594;</button>
+                <button id="sellclothes" onclick="window.location.href='Sell.html' ">Sell Your Clothes</button>
             </div>
         </div>
-        <div class="two" style="background-color: #EDE0CC;height: 615px;display: flex; flex-direction: row;padding-top: 15px; justify-content: center;align-items: center; font-size: 75px;flex: 1;">
-            <p class="hero-img">👗<em style="font-size: 17px;color:#6B4C3B;font-family:'Playfair Display', serif;">Wear it again</em></p>
-            <div class="hero-badge">
-                <span style="font-family:'Playfair Display', serif; font-size: 15px;">100%</span>
-                <span style="font-family:'DM Sans', sans-serif; font-size: 10px;">HANDPICKED</span>
+        <div class="two" >
+            <div class="hero-img">👗<em style="font-size: 17px;color:#6B4C3B;font-family:'Playfair Display', serif;">Wear it again</em>
+                <div class="hero-badge">
+                    <span style="font-family:'Playfair Display', serif; font-size: 15px;">100%</span>
+                    <span style="font-family:'DM Sans', sans-serif; font-size: 10px;">HANDPICKED</span>
+                </div>
             </div>
         </div>
     </section>
@@ -142,7 +143,7 @@
         <div style="font-size: 12px;letter-spacing: .12em;text-transform: uppercase;color: rgba(255, 255, 255, .7);margin-bottom: 12px;">For sellers</div>
         <div style="font-family: var(--font-h);font-size: 2.4rem;color: #fff;margin-bottom: 16px;">Got clothes you <em style="color:#EDE0CC;">don't wear?</em></div>
         <div style="font-size: 16px;color: rgba(255, 255, 255, .8);margin-bottom: 32px;max-width: 480px;margin-left: auto;margin-right: auto;line-height: 1.7;">Upload them on Dobaara. We review, list, and handle delivery. You just earn.</div>
-        <a style="padding:13px;border-radius: 30px;color:#5C6B3A;background-color: #fff;cursor: pointer;">Start Selling Today &#8594;</a>
+        <a style="padding:13px;border-radius: 30px; text-decoration: none; color:#5C6B3A;background-color: #fff;cursor: pointer;" href="Sell.html">Start Selling Today &#8594;</a>
     </div>
     <footer>
         <div class="foot-grid">
@@ -153,7 +154,7 @@
             <div>
                 <div class="foot-col-title">SHOP</div>
                 <ul class="foot-links">
-                    <li><a href="">All clothes</a></li>
+                    <li><a href="Shop.html">All clothes</a></li>
                     <li><a href="">Tops</a></li>
                     <li><a href="">Dresses</a></li>
                     <li><a href="">Jackets</a></li>
@@ -162,7 +163,7 @@
             <div>
                 <div class="foot-col-title">SELL</div>
                 <ul class="foot-links">
-                    <li><a href="">Upload clothes</a></li>
+                    <li><a href="Sell.html">Upload clothes</a></li>
                     <li><a href="">My dashboard</a></li>
                     <li><a href="">How it works</a></li>
                 </ul>
@@ -170,7 +171,7 @@
             <div>
                 <div class="foot-col-title">COMPANY</div>
                 <ul class="foot-links">
-                    <li><a href="">About us</a></li>
+                    <li><a href="About.html">About us</a></li>
                     <li><a href="">Contact</a></li>
                     <li><a href="">Privacy policy</a></li>
                 </ul>
