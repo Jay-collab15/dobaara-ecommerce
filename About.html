@@ -1,109 +1,232 @@
-<!DOCTYPE html>
-<html lang="en">
+:root {
+    --bg: #F5EFE6;
+    --bg2: #EDE0CC;
+    --cream: #FAF6F0;
+    --terra: #C0634A;
+    --terra-h: #6B4C3B;
+    --terra-l: #D9856E;
+    --olive: #5C6B3A;
+    --olive-l: #7A8C50;
+    --brown: #2E1F14;
+    --brown-m: #6B4C3B;
+    --brown-s: #7A6252;
+    --border: #D9C9B5;
+    --font-h: 'Playfair Display', serif;
+    --font-b: 'DM Sans', sans-serif;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dobaara — Wear It Again</title>
-    <link rel="stylesheet" href="About.css">
-</head>
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
-<body>
-    <header>
-        <div class="head">
-            <span class="Dobaara">Dobaara</span>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Shop.html">Shop</a></li>
-                <li><a href="Sell.html">Sell</a></li>
-                <li><a href="About.html">About</a></li>
-            </ul>
-            <div class="button">
-                <div style="display: inline;font-size: larger;padding-right: 15px;cursor: pointer;">🛒<span
-                        class="cart-badge">0</span></div>
-                <button class="login">Login</button>
-                <button class="signup">Sign Up</button>
-            </div>
-        </div>
-    </header>
-    <section style="position: relative;top: 71px;">
+body {
+    background: var(--bg);
+    font-family: var(--font-b);
+    font-weight: 300;
+    overflow-x: hidden;
+}
 
-        <div class="back">
-            <div class="left">
-                <p style="color: #C0634A;font-size:11px;font-weight: 500;letter-spacing: 0.12em;margin-bottom: 10px;">
-                    OUR STORY</p>
-                <h1 class="heading">We started Dobaara because <em style="color: #C0634A;font-style: italic;">nothing
-                        good</em> should go to <br>waste.</h1>
-                <p class="para">Every year, millions of perfectly good clothes are thrown away. Not because they're
-                    broken — just forgotten. We collect them, care for them, and bring them to people who love real
-                    style at honest prices.</p>
-                <p style="color:#7A6252;font-size: 16px;font-style: italic;font-family:'Playfair Display', serif;">"Dobaara
-                    — दोबारा — means once more. That's exactly what we do."</p>
-            </div>
-            <div class="right">
-                <p style="font-size: 70px;margin-bottom: 25px;">♻️</p>
-                <p
-                    style="font-family:'Playfair Display', serif;font-size: 18px;color:#6B4C3B;text-align: center;max-width: 220px;font-style: italic;line-height: 1.5;">
-                    "Every piece has a story. We help you write the next chapter."</p>
-            </div>
-        </div>
-        <div style="padding: 80px;">
-            <p style="color:#C0634A;font-size: 12px;font-weight: 500;letter-spacing: 0.12em;margin-bottom: 2px;text-transform: uppercase;">What we
-                stand for</p>
-            <h1 style="font-size:4vw;font-family:  'Playfair Display', serif;margin-bottom: 16px;">Our <em
-                    style="color: #C0634A;font-style: italic;">values</em></h1>
-            <div class="container">
-                <div class="items">
-                    <div class="item-one">♻️</div>
-                    <div class="item-two">Sustainable by design</div>
-                    <div class="item-three">Every purchase extends a garment's life and reduces fashion waste. Small choices, big impact.</div>
-                </div>
-                <div class="items">
-                    <div class="item-one">🤝</div>
-                    <div class="item-two">Honest pricing always</div>
-                    <div class="item-three">No hidden markups, no gimmicks. Just great clothes at prices that actually make sense.</div>
-                </div>
-                <div class="items">
-                    <div class="item-one">👁️</div>
-                    <div class="item-two">Handpicked with care</div>
-                    <div class="item-three">Every piece goes through our hands personally. We only list what we'd wear ourselves.</div>
-                </div>
-            </div>
-        </div>
-           <footer>
-        <div class="foot-grid">
-            <div class="brand">
-                <div class="logo">Doba<span>ara</span></div>
-                <div class="desc">Giving second-hand clothes a second chance.</div>
-            </div>
-            <div>
-                <div class="foot-col-title">SHOP</div>
-                <ul class="foot-links">
-                    <li><a href="">All clothes</a></li>
-                </ul>
-            </div>
-            <div>
-                <div class="foot-col-title">SELL</div>
-                <ul class="foot-links">
-                    <li><a href="">Sell clothes</a></li>
-                </ul>
-            </div>
-            <div>
-                <div class="foot-col-title">COMPANY</div>
-                <ul class="foot-links">
-                    <li><a href="">About us</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="foot-bottom">
-            <span class="foot-copy" style="font-size: 13px;opacity: .5;">© 2024 Dobaara.♻️</span>
-            <div class="foot-social">
-                <div class="social-btn">📸</div>
-                <div class="social-btn">💬</div>
-            </div>
-        </div>
-    </footer>
-    </section>
-</body>
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 3.0rem;
+}
 
-</html>
+ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--brown-s);
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 19px;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+}
+
+.Dobaara {
+    color: var(--terra);
+    font-size: 2.3rem;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -9px;
+    right: 9px;
+    background: var(--terra);
+    color: #fff;
+    font-size: 9px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.signup {
+    border-radius: 25px;
+    background-color: var(--terra);
+    color: var(--bg);
+    padding: 8px;
+    margin: 15px;
+    border: 1px solid var(--terra);
+}
+
+.signup:hover {
+    background-color: var(--terra-h);
+    border: 1px solid var(--terra-h);
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+.login {
+    border-radius: 25px;
+    border: 1px solid var(--terra);
+    color: var(--terra);
+    padding: 8px;
+    background-color: var(--bg);
+}
+
+.login:hover {
+    background-color: var(--terra);
+    color: var(--bg);
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+.back{
+    background-color: var(--bg2);
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 80px;
+    align-items: center;
+}
+.heading{
+    font-family: var(--font-h);
+    font-size: 3vw;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+.para{
+    color: var(--brown-s);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+.right{
+    background-color: var(--cream);
+    height: 380px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.items{
+    background-color: var(--cream);
+    padding: 25px;
+    border-radius: 25px;
+    border-left: 5px solid var(--terra);
+}
+.item-one{
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+.item-two{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.item-three{
+    font-size: 14px;
+    color: var(--brown-s);
+    line-height: 1.7;
+}
+footer{
+    background: var(--brown);
+    color: var(--bg);
+    padding: 48px 80px;
+   }
+   .logo{
+    font-family: var(--font-h);
+    font-size: 24px;
+    color: var(--terra-l);
+    margin-bottom: 12px;
+   }
+   .logo span{
+    color: var(--olive-l);
+    font-style: italic;
+   }
+   .desc{
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 260px;
+   }
+   .foot-grid{
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+   }
+   .foot-col-title{
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .1em;
+    opacity: .5;
+    margin-bottom: 14px;
+   }
+   .foot-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+   .foot-links a{
+    font-size: 14px;
+    opacity: .7;
+    color: var(--bg);
+    text-decoration: none;
+    cursor: pointer;
+   }
+   .foot-links a:hover{
+    opacity: 1;
+   }
+   .foot-bottom{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(245, 239, 230, .1);
+    padding-top: 24px;
+   }
+   .foot-social{
+    display: flex;
+    gap: 10px;
+   }
+   .social-btn{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(245, 239, 230, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+   }
+   .social-btn:hover{
+    background-color: var(--terra);
+   } 
