@@ -59,11 +59,11 @@ ul li a {
 
 .cart-badge {
     position: absolute;
-    top: 16px;
-    right: 282px;
+    top: -9px;
+    right: 9px;
     background: var(--terra);
     color: #fff;
-    font-size: 10px;
+    font-size: 9px;
     width: 14px;
     height: 14px;
     border-radius: 50%;
@@ -167,7 +167,7 @@ ul li a {
     letter-spacing: .02em;
 }
 .form-input{
-    width: 484px;
+    width: 93.5%;
     padding: 12px 16px;
     border: 1.5px solid var(--border);
     border-radius: 8px;
