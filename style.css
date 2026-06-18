@@ -1,190 +1,512 @@
-<!DOCTYPE html>
-<html lang="en">
+   :root {
+       --bg: #F5EFE6;
+       --bg2: #EDE0CC;
+       --cream: #FAF6F0;
+       --terra: #C0634A;
+       --terra-h: #6B4C3B;
+       --terra-l: #D9856E;
+       --olive: #5C6B3A;
+       --olive-l: #7A8C50;
+       --brown: #2E1F14;
+       --brown-m: #6B4C3B;
+       --brown-s: #7A6252;
+       --border: #D9C9B5;
+       --font-h: 'Playfair Display', serif;
+       --font-b: 'DM Sans', sans-serif;
+   }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dobaara — Wear It Again</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+   html,
+   body {
+       overflow-x: hidden;
+   }
 
-<body>
-    <header>
-        <div class="head">
-            <span class="Dobaara">Dobaara</span>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Shop.html">Shop</a></li>
-                <li><a href="Sell.html">Sell</a></li>
-                <li><a href="About.html">About</a></li>
-            </ul>
-            <div class="button">
-                <div style="display: inline;font-size: larger;padding-right: 15px;cursor: pointer;position: relative;">🛒<span class="cart-badge">0</span></div>
-                <button class="login">Login</button>
-                <button class="signup">Sign Up</button>
-            </div>
-        </div>
-    </header>
-    <section id="container">
-        <div class="one">
-            <p class="animationinone" id="stf">♻️SUSTAINABLE THRIFT FASHION</p>
-            <p class="animationinone" id="goodclothes">Good clothes deserve<br>&nbsp;&nbsp;a
-                <i class="animationinone" id="secondchance">second chance.</i>
-            </p>
-            <p class="animationinone" id="dobaara">Dobaara collects quality second-hand clothing and brings it <br>to
-                you — handpicked, cleaned, and priced honestly. Because<br> style shouldn't cost the earth.</p>
-            <div class="animationinone" style="animation-delay: 0.2s; padding-top: 18px;">
-                <button id="shopnow" onclick="window.location.href='Shop.html' ">Shop Now &#8594;</button>
-                <button id="sellclothes" onclick="window.location.href='Sell.html' ">Sell Your Clothes</button>
-            </div>
-        </div>
-        <div class="two" >
-            <div class="hero-img">👗<em style="font-size: 17px;color:#6B4C3B;font-family:'Playfair Display', serif;">Wear it again</em>
-                <div class="hero-badge">
-                    <span style="font-family:'Playfair Display', serif; font-size: 15px;">100%</span>
-                    <span style="font-family:'DM Sans', sans-serif; font-size: 10px;">HANDPICKED</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="greencontainer">
-        <div class="top">
-            <span>500+</span>
-            <span>100%</span>
-            <span>♻️</span>
-        </div>
-        <div class="bottom">
-            <span>Listening</span>
-            <span style="padding-left: 35px;">Verified</span>
-            <span>Sustainable</span>
-        </div>
-    </div>
-    <div id="finds">
-        <p
-            style="color: #C0634A; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 25px; padding: 25px 0px 0px 20px ;">
-            Latest drops</p>
-        <h2 style="display: inline;">Fresh <em style="color: #C0634A;">finds</em> this week</h2>
-        <button id="viewall">View all &#8594;</button>
-    </div>
-    <section class="cards" style="display: block;">
-        <div class="secfirst">
-            <div class="prod-card">
-                <div class="prod-img">👕</div>
-                <div class="prod-info">
-                    <div class="prod-name">Denim Jacket</div>
-                    <div class="prod-meta">Size M. Like new</div>
-                    <div class="prod-bottom">
-                        <span class="prod-price">₹450</span>
-                        <button class="prod-cart-button">+</button>
-                    </div>
-                </div>
-            </div>
-            <div class="prod-card">
-                <div class="prod-img">👗</div>
-                <div class="prod-info">
-                    <div class="prod-name">Floral Dress</div>
-                    <div class="prod-meta">Size S. Like new</div>
-                    <div class="prod-bottom">
-                        <span class="prod-price">₹320</span>
-                        <button class="prod-cart-button">+</button>
-                    </div>
-                </div>
-            </div>
-            <div class="prod-card">
-                <div class="prod-img">🧥</div>
-                <div class="prod-info">
-                    <div class="prod-name">Winter Coat</div>
-                    <div class="prod-meta">Size L. Good</div>
-                    <div class="prod-bottom">
-                        <span class="prod-price">₹680</span>
-                        <button class="prod-cart-button">+</button>
-                    </div>
-                </div>
-            </div>
-            <div class="prod-card">
-                <div class="prod-img">👖</div>
-                <div class="prod-info">
-                    <div class="prod-name">Blue Jeans</div>
-                    <div class="prod-meta">Size 30. Good</div>
-                    <div class="prod-bottom">
-                        <span class="prod-price">₹350</span>
-                        <button class="prod-cart-button">+</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="secsecond"></div>
-    </section>
-    <section class="section-alt ">
-        <p style="font-size: 12px;letter-spacing: .12em;color: var(--terra);margin-bottom: 10px;font-weight: 500;">HOW IT WORKS</p>
-        <h2 style="font-family: 'Playfair Display', serif;font-size: 50px;">Simple. <em style="color: #C0634A;">Honest. </em>Sustainable.</h2>
-        <div class="how-grid">
-            <div class="how-card">
-                <p style="font-size: 40px;margin-bottom: 12px;">🔍</p>
-                <p style="font-size: 11px;color:#C0634A;letter-spacing: .12em;font-weight: 500;margin-bottom: 6px;">STEP 01</p>
-                <p style="font-size: 18px;font-weight: 500;margin-bottom: 8px;">We collect & curate</p>
-                <p style="font-size: 14px;color: var(--brown-s);line-height: 1.7;">We source quality second-hand clothes and handpick only the best pieces worth a second life.</p>
-            </div>
-            <div class="how-card">
-                <p style="font-size: 40px;margin-bottom: 12px;">✨</p>
-                <p style="font-size: 11px;color:#C0634A;letter-spacing: .12em;font-weight: 500;margin-bottom: 6px;">STEP 02</p>
-                <p style="font-size: 18px;font-weight: 500;margin-bottom: 8px;">We clean & verify</p>
-                <p style="font-size: 14px;color: var(--brown-s);line-height: 1.7;">Every item is cleaned, inspected and quality checked before it ever reaches you.</p>
-            </div>
-            <div class="how-card">
-                <p style="font-size: 40px;margin-bottom: 12px;">📦</p>
-                <p style="font-size: 11px;color:#C0634A;letter-spacing: .12em;font-weight: 500;margin-bottom: 6px;">STEP 03</p>
-                <p style="font-size: 18px;font-weight: 500;margin-bottom: 8px;">You shop & style</p>
-                <p style="font-size: 14px;color: var(--brown-s);line-height: 1.7;">Browse our drops, find your piece, and give it the second life it deserves.</p>
-            </div>
-        </div>
-    </section>
-    <div class="greenbox">
-        <div style="font-size: 12px;letter-spacing: .12em;text-transform: uppercase;color: rgba(255, 255, 255, .7);margin-bottom: 12px;">For sellers</div>
-        <div style="font-family: var(--font-h);font-size: 2.4rem;color: #fff;margin-bottom: 16px;">Got clothes you <em style="color:#EDE0CC;">don't wear?</em></div>
-        <div style="font-size: 16px;color: rgba(255, 255, 255, .8);margin-bottom: 32px;max-width: 480px;margin-left: auto;margin-right: auto;line-height: 1.7;">Upload them on Dobaara. We review, list, and handle delivery. You just earn.</div>
-        <a style="padding:13px;border-radius: 30px; text-decoration: none; color:#5C6B3A;background-color: #fff;cursor: pointer;" href="Sell.html">Start Selling Today &#8594;</a>
-    </div>
-    <footer>
-        <div class="foot-grid">
-            <div class="brand">
-                <div class="logo">Doba<span>ara</span></div>
-                <div class="desc">Giving second-hand clothes a second chance. Sustainable fashion made simple and affordable.</div>
-            </div>
-            <div>
-                <div class="foot-col-title">SHOP</div>
-                <ul class="foot-links">
-                    <li><a href="Shop.html">All clothes</a></li>
-                    <li><a href="">Tops</a></li>
-                    <li><a href="">Dresses</a></li>
-                    <li><a href="">Jackets</a></li>
-                </ul>
-            </div>
-            <div>
-                <div class="foot-col-title">SELL</div>
-                <ul class="foot-links">
-                    <li><a href="Sell.html">Upload clothes</a></li>
-                    <li><a href="">My dashboard</a></li>
-                    <li><a href="">How it works</a></li>
-                </ul>
-            </div>
-            <div>
-                <div class="foot-col-title">COMPANY</div>
-                <ul class="foot-links">
-                    <li><a href="About.html">About us</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Privacy policy</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="foot-bottom">
-            <span class="foot-copy" style="font-size: 13px;opacity: .5;">© 2024 Dobaara. Wear it again. ♻️</span>
-            <div class="foot-social">
-                <div class="social-btn">📸</div>
-                <div class="social-btn">💬</div>
-                <div class="social-btn">✉️</div>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+   * {
+       margin: 0px;
+       padding: 0px;
+   }
+
+   ul {
+       display: flex;
+       list-style-type: none;
+       gap: 3.0rem;
+   }
+
+   ul li a {
+       text-decoration: none;
+       font-size: 16px;
+       color: var(--brown-s);
+   }
+
+   .head {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       padding-left: 19px;
+       position: fixed;
+       height: 70px;
+       width: 100%;
+       background-color: var(--bg);
+       border-bottom: 1px solid var(--border);
+       z-index: 1000;
+   }
+
+   .Dobaara {
+       color: var(--terra);
+       font-size: 2.3rem;
+   }
+
+   .cart-badge {
+       position: absolute;
+       top: -9px;
+       right: 9px;
+       background: var(--terra);
+       color: #fff;
+       font-size: 9px;
+       width: 14px;
+       height: 14px;
+       border-radius: 50%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-weight: 500;
+   }
+
+   .signup {
+       border-radius: 25px;
+       background-color: var(--terra);
+       color: var(--bg);
+       padding: 8px;
+       margin: 15px;
+       border: 1px solid var(--terra);
+   }
+
+   .signup:hover {
+       background-color: var(--terra-h);
+       border: 1px solid var(--terra-h);
+       cursor: pointer;
+       transform: translateY(-1px);
+   }
+
+   .login {
+       border-radius: 25px;
+       border: 1px solid var(--terra);
+       color: var(--terra);
+       padding: 8px;
+       background-color: var(--bg);
+   }
+
+   .login:hover {
+       background-color: var(--terra);
+       color: var(--bg);
+       transform: translateY(-1px);
+       cursor: pointer;
+   }
+
+   #container {
+       display: flex;
+       height: 630px;
+       font-family: 'DM Sans', sans-serif;
+       font-size: 12px;
+       font-weight: 500;
+   }
+
+   #shopnow {
+       background-color: var(--terra);
+       color: var(--bg);
+       border: 1px solid var(--terra);
+       border-radius: 25px;
+       padding: 8px;
+       width: 120px;
+   }
+
+   #shopnow:hover {
+       background-color: var(--terra-h);
+       border: 1px solid var(--terra-h);
+       cursor: pointer;
+       transform: translateY(-1px);
+   }
+
+   #sellclothes {
+       background-color: var(--bg);
+       color: var(--terra);
+       border: 1px solid var(--terra);
+       border-radius: 25px;
+       padding: 8px;
+   }
+
+   #sellclothes:hover {
+       background-color: var(--terra);
+       color: var(--bg);
+       transform: translateY(-1px);
+       cursor: pointer;
+   }
+
+   .two::before {
+       content: '';
+       position: absolute;
+       width: 300px;
+       height: 300px;
+       background: var(--terra);
+       opacity: .06;
+       border-radius: 50%;
+       top: -26px;
+       right: -40px;
+   }
+
+   .greencontainer {
+       background-color: var(--olive);
+       padding: 20px;
+   }
+
+   .top {
+       color: var(--bg);
+       display: flex;
+       justify-content: space-around;
+       font-size: 30px;
+       font-family: 'Times New Roman', Times, serif;
+   }
+
+   .bottom {
+       color: rgb(185, 181, 181);
+       display: flex;
+       justify-content: space-around;
+       padding-top: 5px;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-size: 20px;
+   }
+
+   body {
+       font-family: 'DM Sans', sans-serif;
+       background-color: var(--bg);
+   }
+
+   #finds {
+       font-family: var(--font-h);
+       font-size: 3vw;
+       padding-left: 50px;
+       padding-top: 25px;
+   }
+
+   #viewall {
+       background-color: var(--bg);
+       color: var(--terra);
+       border: 1px solid var(--terra);
+       border-radius: 25px;
+       padding: 8px;
+       margin-left: 45%;
+   }
+
+   #viewall:hover {
+       background-color: var(--terra);
+       color: var(--bg);
+       cursor: pointer;
+   }
+
+   .animationinone {
+       animation: leftcontanima 0.5s ease both;
+   }
+
+   .one {
+       background-color: var(--bg);
+       flex: 1;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   #stf {
+       padding: 6px;
+       background-color: #E8EDD8;
+       color: var(--olive);
+       border: 1px solid var(--olive-l);
+       border-radius: 55px;
+       display: flex;
+       justify-content: center;
+       animation-delay: 0.05s;
+   }
+
+   #goodclothes {
+       font-size: 60px;
+       font-weight: 600;
+       font-family: 'Playfair Display', serif;
+       animation-delay: 0.1s;
+   }
+
+   #secondchance {
+       animation-delay: 0.1s;
+       color: var(--terra);
+       font-size: 5vw;
+       font-family: var(--font-h);
+       font-weight: 600;
+   }
+
+   #dobaara {
+       animation-delay: 0.15s;
+       font-size: 17px;
+       font-family: 'Segoe UI';
+       color: #b19468;
+       padding-top: 10px;
+   }
+
+   @keyframes leftcontanima {
+       0% {
+           opacity: 0;
+           transform: translateY(20px);
+       }
+
+       100% {
+           opacity: 1;
+           transform: translateY(0);
+       }
+   }
+
+   .two {
+       background-color: #EDE0CC;
+       height: 615px;
+       display: flex;
+       flex-direction: row;
+       padding-top: 15px;
+       justify-content: center;
+       align-items: center;
+       font-size: 75px;
+       flex: 1;
+    }
+    
+    .hero-img {
+       position: relative;
+       align-items: center;
+       background-color: #FAF6F0;
+       width: 300px;
+       height: 400px;
+       border-radius: 150px 150px 20px 20px;
+       box-shadow: 0 40px 80px rgba(110, 70, 50, .12);
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       z-index: 10;
+       gap: 10px;
+   }
+
+   .hero-badge {
+       position: absolute;
+       bottom: -24px;
+       right: -32px;
+       width: 100px;
+       height: 100px;
+       background: var(--terra);
+       border-radius: 50%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       color: #fff;
+       gap: 2px;
+       z-index: 15;
+   }
+
+   .secfirst {
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       gap: 20px;
+   }
+
+   .prod-card {
+       border: 1px solid var(--border);
+       border-radius: 12px;
+       background-color: var(--cream);
+   }
+
+   .prod-card:hover {
+       box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.164);
+       cursor: pointer;
+       animation: hover 0.3s ease both;
+   }
+
+   @keyframes hover {
+       0% {
+           transform: translateY(0px);
+       }
+
+       100% {
+           transform: translateY(-10px);
+       }
+   }
+
+   .prod-img {
+       background-color: var(--bg2);
+       height: 200px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 56px;
+       border-top-left-radius: 12px;
+       border-top-right-radius: 12px;
+   }
+
+   .prod-info {
+       padding: 14px;
+   }
+
+   .prod-name {
+       font-size: 18px;
+       font-weight: 500;
+       color: var(--brown);
+       margin-bottom: 4px;
+   }
+
+   .prod-meta {
+       font-size: 12px;
+       color: var(--brown-s);
+       margin-bottom: 8px;
+   }
+
+   .prod-bottom {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+   }
+
+   .prod-price {
+       font-size: 18px;
+       font-weight: 500;
+       color: var(--terra);
+       font-family: var(--font-h);
+   }
+
+   .prod-cart-button {
+       width: 32px;
+       height: 32px;
+       background: var(--terra);
+       border: none;
+       border-radius: 50%;
+       cursor: pointer;
+       font-size: 14px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+
+   .prod-cart-button:hover {
+       background-color: var(--terra-h);
+   }
+
+   .cards {
+       padding: 50px 80px 80px 80px;
+   }
+
+   .section-alt {
+       display: block;
+       background-color: var(--cream);
+       padding: 70px;
+   }
+
+   .how-card {
+       background-color: var(--bg);
+       border: 1px solid var(--border);
+       border-radius: 16px;
+       padding: 32px;
+       text-align: center;
+   }
+
+   .how-grid {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 24px;
+       padding-top: 20px;
+   }
+
+   .how-card:hover {
+       transform: translateY(-3px);
+   }
+
+   .greenbox {
+       background-color: var(--olive);
+       padding: 80px;
+       text-align: center;
+   }
+
+   footer {
+       background: var(--brown);
+       color: var(--bg);
+       padding: 48px 80px;
+   }
+
+   .logo {
+       font-family: var(--font-h);
+       font-size: 24px;
+       color: var(--terra-l);
+       margin-bottom: 12px;
+   }
+
+   .logo span {
+       color: var(--olive-l);
+       font-style: italic;
+   }
+
+   .desc {
+       font-size: 14px;
+       line-height: 1.7;
+       max-width: 260px;
+   }
+
+   .foot-grid {
+       display: grid;
+       grid-template-columns: 2fr 1fr 1fr 1fr;
+       gap: 40px;
+       margin-bottom: 40px;
+   }
+
+   .foot-col-title {
+       font-size: 13px;
+       font-weight: 500;
+       letter-spacing: .1em;
+       opacity: .5;
+       margin-bottom: 14px;
+   }
+
+   .foot-links {
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+   }
+
+   .foot-links a {
+       font-size: 14px;
+       opacity: .7;
+       color: var(--bg);
+       text-decoration: none;
+       cursor: pointer;
+   }
+
+   .foot-links a:hover {
+       opacity: 1;
+   }
+
+   .foot-bottom {
+       display: flex;
+       justify-content: space-between;
+       border-top: 1px solid rgba(245, 239, 230, .1);
+       padding-top: 24px;
+   }
+
+   .foot-social {
+       display: flex;
+       gap: 10px;
+   }
+
+   .social-btn {
+       width: 36px;
+       height: 36px;
+       border-radius: 50%;
+       border: 1px solid rgba(245, 239, 230, .2);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       cursor: pointer;
+       font-size: 14px;
+   }
+
+   .social-btn:hover {
+       background-color: var(--terra);
+   }
