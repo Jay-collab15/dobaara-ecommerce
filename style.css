@@ -55,6 +55,14 @@
        font-size: 2.3rem;
    }
 
+   .cart {
+       display: inline;
+       font-size: larger;
+       padding-right: 15px;
+       cursor: pointer;
+       position: relative;
+   }
+
    .cart-badge {
        position: absolute;
        top: -9px;
@@ -96,6 +104,37 @@
    }
 
    .login:hover {
+       background-color: var(--terra);
+       color: var(--bg);
+       transform: translateY(-1px);
+       cursor: pointer;
+   }
+
+   .signup-laptop {
+       border-radius: 25px;
+       background-color: var(--terra);
+       color: var(--bg);
+       padding: 8px;
+       margin: 15px;
+       border: 1px solid var(--terra);
+   }
+
+   .signup-laptop:hover {
+       background-color: var(--terra-h);
+       border: 1px solid var(--terra-h);
+       cursor: pointer;
+       transform: translateY(-1px);
+   }
+
+   .login-laptop {
+       border-radius: 25px;
+       border: 1px solid var(--terra);
+       color: var(--terra);
+       padding: 8px;
+       background-color: var(--bg);
+   }
+
+   .login-laptop:hover {
        background-color: var(--terra);
        color: var(--bg);
        transform: translateY(-1px);
@@ -185,6 +224,7 @@
        font-size: 3vw;
        padding-left: 50px;
        padding-top: 25px;
+       position: relative;
    }
 
    #viewall {
@@ -227,24 +267,27 @@
    }
 
    #goodclothes {
-       font-size: 60px;
+       font-size: clamp(2.4rem, 4vw, 3.8rem);
        font-weight: 600;
        font-family: 'Playfair Display', serif;
        animation-delay: 0.1s;
+       text-align: center;
+   }
+
+   #dobaara {
+       text-align: center;
    }
 
    #secondchance {
        animation-delay: 0.1s;
        color: var(--terra);
-       font-size: 5vw;
        font-family: var(--font-h);
        font-weight: 600;
    }
 
    #dobaara {
        animation-delay: 0.15s;
-       font-size: 17px;
-       font-family: 'Segoe UI';
+       font-size: 16px;
        color: #b19468;
        padding-top: 10px;
    }
@@ -271,9 +314,9 @@
        align-items: center;
        font-size: 75px;
        flex: 1;
-    }
-    
-    .hero-img {
+   }
+
+   .hero-img {
        position: relative;
        align-items: center;
        background-color: #FAF6F0;
@@ -509,4 +552,77 @@
 
    .social-btn:hover {
        background-color: var(--terra);
+   }
+
+   .menu {
+       fill: var(--brown-s);
+       align-self: center;
+   }
+
+   .sidebar {
+       height: 40vh;
+       width: 200px;
+       display: none;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: flex-start;
+       gap: 25px;
+       position: fixed;
+       top: 0;
+       right: 0;
+       background-color: #f5efe600;
+       backdrop-filter: blur(9px);
+       z-index: 999;
+       padding: 15px 0 0 20px;
+
+   }
+
+
+   @media(max-width:700px) {
+       .button {
+           display: flex;
+           align-items: center;
+           gap: 15px;
+       }
+
+       .laptop-nav {
+           display: none;
+       }
+
+       .login-laptop,
+       .signup-laptop {
+           display: none;
+       }
+
+       .Dobaara {
+           margin-left: -35px;
+       }
+   }
+
+   @media(min-width:700px) {
+       .menu {
+           display: none;
+       }
+
+       .login,
+       .signup {
+           display: none;
+       }
+   }
+
+   @media(max-width:900px) {
+       .two {
+           display: none;
+       }
+       #viewall{display: none;}
+       .secfirst{grid-template-columns: repeat(2,1fr);}
+        .cards {
+       padding: 50px 25px 80px 25px;
+   }
+   .how-grid{
+    grid-template-columns: 1fr;
+   }
+   .foot-grid{
+    grid-template-columns: repeat(2,1fr);
+   }
    }
