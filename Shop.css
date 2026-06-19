@@ -53,6 +53,13 @@ body{
        color: var(--terra);
        font-size: 2.3rem;
    }
+      .cart {
+       display: inline;
+       font-size: larger;
+       padding-right: 15px;
+       cursor: pointer;
+       position: relative;
+   }
    .cart-badge{
     position: absolute;
     top: -9px;
@@ -93,6 +100,36 @@ body{
    }
 
    .login:hover {
+       background-color: var(--terra);
+       color: var(--bg);
+       transform: translateY(-1px);
+       cursor: pointer;
+   }
+      .signup-laptop {
+       border-radius: 25px;
+       background-color: var(--terra);
+       color: var(--bg);
+       padding: 8px;
+       margin: 15px;
+       border: 1px solid var(--terra);
+   }
+
+   .signup-laptop:hover {
+       background-color: var(--terra-h);
+       border: 1px solid var(--terra-h);
+       cursor: pointer;
+       transform: translateY(-1px);
+   }
+
+   .login-laptop {
+       border-radius: 25px;
+       border: 1px solid var(--terra);
+       color: var(--terra);
+       padding: 8px;
+       background-color: var(--bg);
+   }
+
+   .login-laptop:hover {
        background-color: var(--terra);
        color: var(--bg);
        transform: translateY(-1px);
@@ -229,4 +266,56 @@ body{
    }
    .prod-cart-button:hover{
     background-color: var(--terra-h);
+   }
+     .menu {
+       fill: var(--brown-s);
+       align-self: center;
+   }
+
+   .sidebar {
+       height: 40vh;
+       width: 200px;
+       display: none;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: flex-start;
+       gap: 25px;
+       position: fixed;
+       top: 0;
+       right: 0;
+       background-color: #f5efe600;
+       backdrop-filter: blur(9px);
+       z-index: 999;
+       padding: 15px 0 0 20px;
+
+   }
+   @media(max-width:700px) {
+       .button {
+           display: flex;
+           align-items: center;
+           gap: 15px;
+       }
+
+       .laptop-nav {
+           display: none;
+       }
+
+       .login-laptop,
+       .signup-laptop {
+           display: none;
+       }
+
+       .Dobaara {
+           margin-left: -35px;
+       }
+    }
+    
+    @media(min-width:700px) {
+        .menu {
+            display: none;
+        }
+       .login,
+       .signup {
+           display: none;
+       }
    }
