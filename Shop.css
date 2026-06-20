@@ -14,53 +14,59 @@
     --font-h: 'Playfair Display', serif;
     --font-b: 'DM Sans', sans-serif;
 }
+
 * {
     margin: 0px;
     padding: 0px;
 }
-body{
+
+body {
     background: var(--bg);
     font-family: var(--font-b);
     font-weight: 300;
     overflow-x: hidden;
-} 
- ul {
-       display: flex;
-       list-style-type: none;
-       gap: 3.0rem;
-   }
+}
 
-   ul li a {
-       text-decoration: none;
-       font-size: 16px;
-       color: var(--brown-s);
-   }
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 3.0rem;
+}
 
-   .head {
-       display: flex;
-       justify-content: space-around;
-       align-items: center;
-       padding-left: 19px;
-       position: fixed;
-       height: 70px;
-       width: 100%;
-       background-color: var(--bg);
-       border-bottom: 1px solid var(--border);
-       z-index: 1000;
-   }
+ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--brown-s);
+}
 
-   .Dobaara {
-       color: var(--terra);
-       font-size: 2.3rem;
-   }
-      .cart {
-       display: inline;
-       font-size: larger;
-       padding-right: 15px;
-       cursor: pointer;
-       position: relative;
-   }
-   .cart-badge{
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 19px;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+}
+
+.Dobaara {
+    color: var(--terra);
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.cart {
+    display: inline;
+    font-size: larger;
+    padding-right: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.cart-badge {
     position: absolute;
     top: -9px;
     right: 9px;
@@ -74,89 +80,102 @@ body{
     align-items: center;
     justify-content: center;
     font-weight: 500;
-   }
-   .signup {
-       border-radius: 25px;
-       background-color: var(--terra);
-       color: var(--bg);
-       padding: 8px;
-       margin: 15px;
-       border: 1px solid var(--terra);
-   }
+}
 
-   .signup:hover {
-       background-color: var(--terra-h);
-       border: 1px solid var(--terra-h);
-       cursor: pointer;
-       transform: translateY(-1px);
-   }
+.signup {
+    border-radius: 25px;
+    background-color: var(--terra);
+    color: var(--bg);
+    padding: 8px;
+    margin: 15px;
+    border: 1px solid var(--terra);
+}
 
-   .login {
-       border-radius: 25px;
-       border: 1px solid var(--terra);
-       color: var(--terra);
-       padding: 8px;
-       background-color: var(--bg);
-   }
+.signup:hover {
+    background-color: var(--terra-h);
+    border: 1px solid var(--terra-h);
+    cursor: pointer;
+    transform: translateY(-1px);
+}
 
-   .login:hover {
-       background-color: var(--terra);
-       color: var(--bg);
-       transform: translateY(-1px);
-       cursor: pointer;
-   }
-      .signup-laptop {
-       border-radius: 25px;
-       background-color: var(--terra);
-       color: var(--bg);
-       padding: 8px;
-       margin: 15px;
-       border: 1px solid var(--terra);
-   }
+.login {
+    border-radius: 25px;
+    border: 1px solid var(--terra);
+    color: var(--terra);
+    padding: 8px;
+    background-color: var(--bg);
+}
 
-   .signup-laptop:hover {
-       background-color: var(--terra-h);
-       border: 1px solid var(--terra-h);
-       cursor: pointer;
-       transform: translateY(-1px);
-   }
+.login:hover {
+    background-color: var(--terra);
+    color: var(--bg);
+    transform: translateY(-1px);
+    cursor: pointer;
+}
 
-   .login-laptop {
-       border-radius: 25px;
-       border: 1px solid var(--terra);
-       color: var(--terra);
-       padding: 8px;
-       background-color: var(--bg);
-   }
+.signup-laptop {
+    border-radius: 25px;
+    background-color: var(--terra);
+    color: var(--bg);
+    padding: 8px;
+    margin: 15px;
+    border: 1px solid var(--terra);
+}
 
-   .login-laptop:hover {
-       background-color: var(--terra);
-       color: var(--bg);
-       transform: translateY(-1px);
-       cursor: pointer;
-   }
-   .filter-panel{
+.signup-laptop:hover {
+    background-color: var(--terra-h);
+    border: 1px solid var(--terra-h);
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+.login-laptop {
+    border-radius: 25px;
+    border: 1px solid var(--terra);
+    color: var(--terra);
+    padding: 8px;
+    background-color: var(--bg);
+}
+
+.login-laptop:hover {
+    background-color: var(--terra);
+    color: var(--bg);
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
+.shop-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 50px;
+    gap: 20px;
+}
+
+.filter-panel {
     background-color: var(--cream);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 24px;
     position: sticky;
     height: fit-content;
-   }
-   .filter-grp-title{
+}
+
+.filter-grp-title {
     font-size: 12px;
     letter-spacing: .1em;
     text-transform: uppercase;
     color: var(--brown-s);
     font-weight: 500;
     margin-bottom: 10px;
-   }
-   .filter-chips{
+}
+
+.filter-chips {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-   }
-   .chip{
+}
+
+.chip {
     padding: 6px 14px;
     border-radius: 9999px;
     font-size: 12px;
@@ -164,23 +183,27 @@ body{
     color: var(--brown-s);
     cursor: pointer;
     background-color: var(--bg);
-   }
-   .chip:hover{
+}
+
+.chip:hover {
     background-color: var(--terra);
     color: #fff;
     border-color: var(--terra);
-   }
-   .price-range{
+}
+
+.price-range {
     display: flex;
     gap: 20px;
-   }
-   .price-input{
+}
+
+.price-input {
     padding: 10px;
     border: 1px solid var(--border);
     border-radius: 12px;
     width: 80px;
-   }
-   .button-change{
+}
+
+.button-change {
     margin-top: 15px;
     padding: 10px 24px;
     border-radius: 9999px;
@@ -193,66 +216,78 @@ body{
     width: 100%;
     background: var(--terra);
     color: #fff;
-   }
-   .shop-main{
+}
+
+.shop-main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-   }
-   .prod-card{
+}
+
+.prod-card {
     border: 1px solid var(--border);
     border-radius: 12px;
-    background-color:var(--cream);
-   }
-   .prod-card:hover{
-    box-shadow:  0px 4px 12px rgba(0, 0, 0, 0.164);
+    background-color: var(--cream);
+}
+
+.prod-card:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.164);
     cursor: pointer;
-        animation: hover 0.3s ease both;
-   }
-      @keyframes hover{
-    0%{
+    animation: hover 0.3s ease both;
+}
+
+@keyframes hover {
+    0% {
         transform: translateY(0px);
     }
-    100%{
+
+    100% {
         transform: translateY(-10px);
     }
-   }
-   .prod-img {
-       background-color: var(--bg2);
-       height: 200px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       font-size: 56px;
-       border-top-left-radius: 12px;
-       border-top-right-radius: 12px;
-   }
-   .prod-info{
+}
+
+.prod-img {
+    background-color: var(--bg2);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 56px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.prod-info {
     padding: 14px;
-   }
-   .prod-name{
+}
+
+.prod-name {
     font-size: 18px;
     font-weight: 500;
     color: var(--brown);
     margin-bottom: 4px;
-   }
-   .prod-meta{
+}
+
+.prod-meta {
     font-size: 12px;
     color: var(--brown-s);
     margin-bottom: 8px;
-   }
-   .prod-bottom{
+}
+
+.prod-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   }
-   .prod-price{
+}
+
+.prod-price {
     font-size: 18px;
     font-weight: 500;
     color: var(--terra);
     font-family: var(--font-h);
-   }
-   .prod-cart-button{
+}
+
+.prod-cart-button {
     width: 32px;
     height: 32px;
     background: var(--terra);
@@ -263,59 +298,77 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-   }
-   .prod-cart-button:hover{
+}
+
+.prod-cart-button:hover {
     background-color: var(--terra-h);
-   }
-     .menu {
-       fill: var(--brown-s);
-       align-self: center;
-   }
+}
 
-   .sidebar {
-       height: 40vh;
-       width: 200px;
-       display: none;
-       flex-direction: column;
-       justify-content: flex-start;
-       align-items: flex-start;
-       gap: 25px;
-       position: fixed;
-       top: 0;
-       right: 0;
-       background-color: #f5efe600;
-       backdrop-filter: blur(9px);
-       z-index: 999;
-       padding: 15px 0 0 20px;
+.menu {
+    fill: var(--brown-s);
+    align-self: center;
+}
 
-   }
-   @media(max-width:700px) {
-       .button {
-           display: flex;
-           align-items: center;
-           gap: 15px;
-       }
+.sidebar {
+    height: 40vh;
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f5efe600;
+    backdrop-filter: blur(9px);
+    z-index: 999;
+    padding: 15px 0 0 20px;
 
-       .laptop-nav {
-           display: none;
-       }
+}
 
-       .login-laptop,
-       .signup-laptop {
-           display: none;
-       }
-
-       .Dobaara {
-           margin-left: -35px;
-       }
+@media(max-width:700px) {
+    .button {
+        display: flex;
+        align-items: center;
+        gap: 15px;
     }
-    
-    @media(min-width:700px) {
-        .menu {
-            display: none;
-        }
-       .login,
-       .signup {
-           display: none;
-       }
-   }
+
+    .laptop-nav {
+        display: none;
+    }
+
+    .login-laptop,
+    .signup-laptop {
+        display: none;
+    }
+
+    .Dobaara {
+        margin-left: -35px;
+    }
+}
+
+@media(max-width:900px){
+    .filter-panel{
+        display: none;
+    }
+    .shop-layout{
+        grid-template-columns:1fr;
+        padding: 50px 25px 50px 25px;
+    }
+
+    .shop-main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width:700px) {
+    .menu {
+        display: none;
+    }
+
+    .login,
+    .signup {
+        display: none;
+    }
+}
