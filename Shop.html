@@ -40,12 +40,12 @@
 
 
         <div style="background-color: #EDE0CC;padding: 40px 80px 32px;">
-            <h1 style="font-family:'Playfair Display', serif;font-size: 3.5vw;line-height: 1.2;">
+            <h1 style="font-family:'Playfair Display', serif;font-size:clamp(1.5rem,3.5vw,3.8rem);line-height: 1.2;">
                 Browse <em style="color: #c0634a; font-style: italic;">all clothes</em>
             </h1>
             <p style="color:#7A6252;margin-top: 8px;">Handpicked pieces, new drops every week.</p>
         </div>
-        <div class="shop-layout" style="display: grid; grid-template-columns: 1fr 3fr; padding: 50px; gap: 20px;">
+        <div class="shop-layout">
             <div class="filter-panel">
                 <div class="filter" style="font-size: 16px;font-weight: 500;margin-bottom: 20px;">Filters</div>
                 <div class="filter-grp">
@@ -136,9 +136,18 @@
         </div>
 
 
-
     </section>
-    
+
+        <script>
+        function Sidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='flex'
+        }
+        function Hidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+    </script>
 </body>
 
 </html>
