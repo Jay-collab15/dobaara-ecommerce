@@ -55,6 +55,7 @@ ul li a {
 .Dobaara {
     color: var(--terra);
     font-size: 2.3rem;
+    font-weight: 400;
 }
    .cart {
        display: inline;
@@ -163,7 +164,7 @@ ul li a {
 
 .hero-sec {
     font-family: var(--font-h);
-    font-size: 3vw;
+    font-size:clamp(2.4rem,3vw,3.8rem);
     line-height: 1.2;
     margin-bottom: 16px;
 }
@@ -301,9 +302,10 @@ ul li a {
        .Dobaara {
            margin-left: -35px;
        }
-
+       .section-hero{
+        padding: 60px 15px 60px 15px;
+       }
    }
-
    @media(min-width:700px) {
        .menu {
            display: none;
