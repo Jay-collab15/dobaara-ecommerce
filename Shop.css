@@ -151,6 +151,20 @@ ul li a {
     gap: 20px;
 }
 
+.filter-bar{
+    margin: 25px 0px -25px 15px;
+}
+
+.filter-list{
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+}
+
 .filter-panel {
     background-color: var(--cream);
     border: 1px solid var(--border);
@@ -352,6 +366,8 @@ ul li a {
     .filter-panel{
         display: none;
     }
+    .prod-card:hover{animation: none;
+    box-shadow: none;}
     .shop-layout{
         grid-template-columns:1fr;
         padding: 50px 25px 50px 25px;
@@ -361,7 +377,9 @@ ul li a {
         grid-template-columns: 1fr 1fr;
     }
 }
-
+@media(min-width:900px){
+    .filter-bar{display: none;}
+}
 @media(min-width:700px) {
     .menu {
         display: none;
