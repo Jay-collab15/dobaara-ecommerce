@@ -13,12 +13,17 @@
         <div class="head">
             <span class="Dobaara">Dobaara</span>
             <ul class="sidebar">
-                <li onclick=Hidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#7A6252"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li onclick=Hidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960"
+                            width="26px" fill="#7A6252">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Shop.html">Shop</a></li>
                 <li><a href="Sell.html">Sell</a></li>
                 <li><a href="About.html">About</a></li>
-                <li><button class="login">Login</button><button class="signup">Sign Up</button></li>
+                <li><button class="login" onclick="window.location.href='signup.html'">Login</button><button
+                        class="signup" onclick="window.location.href='signup.html'">Sign Up</button></li>
             </ul>
             <ul class="laptop-nav">
                 <li><a href="index.html">Home</a></li>
@@ -27,16 +32,17 @@
                 <li><a href="About.html">About</a></li>
             </ul>
             <div class="button">
-                <div class="cart">🛒<span class="cart-badge">0</span></div>
-                <div class="menu" onclick=Sidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
-                <button class="login-laptop">Login</button>
-                <button class="signup-laptop">Sign Up</button>
+                <div class="cart" onclick="window.location.href='Cart.html'">🛒<span class="cart-badge">0</span></div>
+                <div class="menu" onclick=Sidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                        viewBox="0 -960 960 960" width="26px">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></div>
+                <button class="login-laptop" onclick="window.location.href='signup.html'">Login</button>
+                <button class="signup-laptop" onclick="window.location.href='signup.html'">Sign Up</button>
             </div>
         </div>
     </header>
     <section style="position: relative;top: 71px;">
-
-
 
 
         <div style="background-color: #EDE0CC;padding: 40px 80px 32px;">
@@ -44,6 +50,52 @@
                 Browse <em style="color: #c0634a; font-style: italic;">all clothes</em>
             </h1>
             <p style="color:#7A6252;margin-top: 8px;">Handpicked pieces, new drops every week.</p>
+        </div>
+        <div class="filter-bar" onclick=Filterbar()><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                viewBox="0 -960 960 960" width="26px" fill="#7A6252">
+                <path d="M400-240v-80h160v80H400ZM240-440v-80h480v80H240ZM120-640v-80h720v80H120Z" />
+            </svg></div>
+        <div class="filter-list">
+            <div style="position: relative;left: -5px;top: -5px;z-index: 99999;" onclick=Hidefilter()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></div>
+            <div class="filter" style="font-size: 16px;font-weight: 500;margin-bottom: 20px;">Filters</div>
+            <div class="filter-grp">
+                <div class="filter-grp-title">Category</div>
+                <div class="filter-chips">
+                    <div class="chip">All</div>
+                    <div class="chip">Tops</div>
+                    <div class="chip">Dresses</div>
+                    <div class="chip">Jackets</div>
+                    <div class="chip">Bottoms</div>
+                    <div class="chip">Accessories</div>
+                </div>
+            </div>
+            <div class="filter-grp" style="margin-top: 15px;">
+                <div class="filter-grp-title">Size</div>
+                <div class="filter-chips">
+                    <div class="chip">XS</div>
+                    <div class="chip">S</div>
+                    <div class="chip">M</div>
+                    <div class="chip">L</div>
+                    <div class="chip">XL</div>
+                    <div class="chip">XXL</div>
+                </div>
+            </div>
+            <div class="filter-grp" style="margin-top: 15px;">
+                <div class="filter-grp-title">Condition</div>
+                <div class="filter-chips">
+                    <div class="chip">Like new</div>
+                    <div class="chip">Good</div>
+                    <div class="chip">Fair</div>
+                </div>
+            </div>
+            <div class="filter-grp" style="margin-top: 15px;">
+                <div class="filter-grp-title">Price range (₹)</div>
+                <div class="price-range">
+                    <input type="number" class="price-input" placeholder="Min">
+                    <input type="number" class="price-input" placeholder="Max">
+                </div>
+            </div>
+            <button class="button-change">Apply Filters</button>
         </div>
         <div class="shop-layout">
             <div class="filter-panel">
@@ -138,16 +190,7 @@
 
     </section>
 
-        <script>
-        function Sidebar(){
-            const sidebar=document.querySelector('.sidebar')
-            sidebar.style.display='flex'
-        }
-        function Hidebar(){
-            const sidebar=document.querySelector('.sidebar')
-            sidebar.style.display='none'
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
