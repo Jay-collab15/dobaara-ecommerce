@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobaara — Wear It Again</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <span class="Dobaara">Dobaara</span>
+            <ul class="sidebar">
+                <li onclick=Hidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#7A6252"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="Sell.html">Sell</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+            <ul class="laptop-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="Sell.html">Sell</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+            <div class="button">
+                <div class="cart" onclick="window.location.href='Cart.html'">🛒<span class="cart-badge">0</span></div>
+                <div class="menu" onclick=Sidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+            </div>
+        </div>
+    </header>
+    <section>
+
+        <div class="container">
+            <div class="sub-Dobaara">Dobaara</div>
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab('login',this)">Login</div>
+                <div class="tab" onclick="switchTab('signup',this)">Sign Up</div>
+            </div>
+            <div id="signup-role" style="display: none;">
+                <div class="parent-box">
+                    <div class="child-box active" onclick="selectRole(this)">
+                        <div style="font-size: 20px;margin-bottom: 4px;">🛍️</div>
+                        <div style="font-size: 13px;font-weight: 500;color: var(--brown);">Buyer</div>
+                        <div style="font-size: 11px;color: var(--brown-s);">Shop clothes</div>
+                    </div>
+                    <div class="child-box" onclick="selectRole(this)">
+                        <div style="font-size: 20px;margin-bottom: 4px;">👕</div>
+                        <div style="font-size: 13px;font-weight: 500;color: var(--brown);">Seller</div>
+                        <div style="font-size: 11px;color: var(--brown-s);">Sell clothes</div>
+                    </div>
+                </div>
+                <div class="form-grp">
+                    <label class="form-label" >Full name</label>
+                    <input class="form-input" placeholder="Your full name">
+                </div>
+            </div>
+            <div class="form-grp">
+                <label class="form-label">Email address</label>
+                <input class="form-input" placeholder="email@gmail.com" type="email">
+            </div>
+            <div class="form-grp">
+                <label class="form-label">Password</label>
+                <input class="form-input" placeholder="Enter password" type="password">
+            </div>
+            <button class="btn" onclick=welcome()>Continue &#8594;</button>
+            <div class="divider">or</div>
+            <button class="google-btn">🌐 Continue with Google</button>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
