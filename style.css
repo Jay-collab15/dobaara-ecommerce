@@ -378,6 +378,7 @@
    }
 
    .prod-img {
+    position: relative;
        background-color: var(--bg2);
        height: 200px;
        display: flex;
@@ -386,6 +387,26 @@
        font-size: 56px;
        border-top-left-radius: 12px;
        border-top-right-radius: 12px;
+   }
+
+   .prod-badge {
+       position: absolute;
+       top: 10px;
+       left: 10px;
+       font-size: 10px;
+       padding: 3px 10px;
+       border-radius: 9999px;
+       font-weight: 500;
+   }
+
+   .badge-new {
+       background: var(--olive);
+       color: #fff;
+   }
+
+   .badge-hot {
+       background: var(--terra);
+       color: #fff;
    }
 
    .prod-info {
@@ -615,15 +636,24 @@
        .two {
            display: none;
        }
-       #viewall{display: none;}
-       .secfirst{grid-template-columns: repeat(2,1fr);}
-        .cards {
-       padding: 50px 25px 80px 25px;
-   }
-   .how-grid{
-    grid-template-columns: 1fr;
-   }
-   .foot-grid{
-    grid-template-columns: repeat(2,1fr);
-   }
+
+       #viewall {
+           display: none;
+       }
+
+       .secfirst {
+           grid-template-columns: repeat(2, 1fr);
+       }
+
+       .cards {
+           padding: 50px 25px 80px 25px;
+       }
+
+       .how-grid {
+           grid-template-columns: 1fr;
+       }
+
+       .foot-grid {
+           grid-template-columns: repeat(2, 1fr);
+       }
    }
