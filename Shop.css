@@ -86,7 +86,10 @@ ul li a {
     border-radius: 25px;
     background-color: var(--terra);
     color: var(--bg);
-    padding: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 7px 16px;
+    transition: all 0.2s;
     margin: 15px;
     border: 1px solid var(--terra);
 }
@@ -102,7 +105,10 @@ ul li a {
     border-radius: 25px;
     border: 1px solid var(--terra);
     color: var(--terra);
-    padding: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 7px 16px;
+    transition: all 0.2s;
     background-color: var(--bg);
 }
 
@@ -117,7 +123,10 @@ ul li a {
     border-radius: 25px;
     background-color: var(--terra);
     color: var(--bg);
-    padding: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 7px 16px;
+    transition: all 0.2s;
     margin: 15px;
     border: 1px solid var(--terra);
 }
@@ -133,7 +142,10 @@ ul li a {
     border-radius: 25px;
     border: 1px solid var(--terra);
     color: var(--terra);
-    padding: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 7px 16px;
+    transition: all 0.2s;
     background-color: var(--bg);
 }
 
@@ -157,12 +169,13 @@ ul li a {
 
 .filter-list {
     display: none;
-    position: absolute;
+    position:absolute;
     top: 0;
     background-color: var(--cream);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 24px;
+    z-index: 10;
 }
 
 .filter-panel {
@@ -243,12 +256,13 @@ ul li a {
     border: 1px solid var(--border);
     border-radius: 12px;
     background-color: var(--cream);
+    transition: all 0.2s;
 }
 
 .prod-card:hover {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.164);
     cursor: pointer;
-    animation: hover 0.3s ease both;
+    animation: hover 0.2s ease both;
 }
 
 @keyframes hover {
