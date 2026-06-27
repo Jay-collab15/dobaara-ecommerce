@@ -84,7 +84,10 @@
        border-radius: 25px;
        background-color: var(--terra);
        color: var(--bg);
-       padding: 8px;
+       font-weight: 600;
+       font-size: 13px;
+       padding: 7px 16px;
+       transition: all 0.2s;
        margin: 15px;
        border: 1px solid var(--terra);
    }
@@ -100,7 +103,10 @@
        border-radius: 25px;
        border: 1px solid var(--terra);
        color: var(--terra);
-       padding: 8px;
+       font-weight: 600;
+       font-size: 13px;
+       padding: 7px 16px;
+       transition: all 0.2s;
        background-color: var(--bg);
    }
 
@@ -115,7 +121,10 @@
        border-radius: 25px;
        background-color: var(--terra);
        color: var(--bg);
-       padding: 8px;
+       font-weight: 600;
+       font-size: 13px;
+       padding: 7px 16px;
+       transition: all 0.2s;
        margin: 15px;
        border: 1px solid var(--terra);
    }
@@ -131,7 +140,10 @@
        border-radius: 25px;
        border: 1px solid var(--terra);
        color: var(--terra);
-       padding: 8px;
+       font-weight: 600;
+       font-size: 13px;
+       padding: 7px 16px;
+       transition: all 0.2s;
        background-color: var(--bg);
    }
 
@@ -155,7 +167,10 @@
        color: var(--bg);
        border: 1px solid var(--terra);
        border-radius: 25px;
-       padding: 8px;
+       font-weight: 600;
+       font-size: 13px;
+       padding: 7px 16px;
+       transition: all 0.2s;
        width: 120px;
    }
 
@@ -171,7 +186,10 @@
        color: var(--terra);
        border: 1px solid var(--terra);
        border-radius: 25px;
-       padding: 8px;
+       font-weight: 600;
+       font-size: 13px;
+       padding: 7px 16px;
+       transition: all 0.2s;
    }
 
    #sellclothes:hover {
@@ -233,7 +251,10 @@
        color: var(--terra);
        border: 1px solid var(--terra);
        border-radius: 25px;
-       padding: 8px;
+       font-weight: 600;
+       font-size: 13px;
+       padding: 7px 16px;
+       transition: all 0.2s;
        margin-left: 45%;
    }
 
@@ -359,12 +380,13 @@
        border: 1px solid var(--border);
        border-radius: 12px;
        background-color: var(--cream);
+       transition: all 0.2s;
    }
 
    .prod-card:hover {
        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.164);
        cursor: pointer;
-       animation: hover 0.3s ease both;
+       animation: hover 0.2s ease both;
    }
 
    @keyframes hover {
@@ -378,7 +400,7 @@
    }
 
    .prod-img {
-    position: relative;
+       position: relative;
        background-color: var(--bg2);
        height: 200px;
        display: flex;
