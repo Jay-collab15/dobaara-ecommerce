@@ -1,5 +1,7 @@
 //---DATA---
 
+let cart = [];
+let currentProduct = null;
 const products = [
     { id: 1, name: 'Denim Jacket', category: 'Jackets', size: 'M', condition: 'Like new', price: 450, emoji: '👕', badge: 'hot' },
     { id: 2, name: 'Floral Dress', category: 'Dresses', size: 'S', condition: 'Like new', price: 320, emoji: '👗', badge: 'new' },
@@ -16,7 +18,7 @@ function renderProduct(containerId, items, limit) {
     if (!container) return;
     const list = limit ? items.slice(0, limit) : items;
     container.innerHTML = list.map(p => `
-        <div class="prod-card">
+        <div class="prod-card" onclick="openProduct(${p.id})">
         <div class="prod-img">
         ${p.emoji}
         ${p.badge ? `<span class="prod-badge badge-${p.badge}">${p.badge === 'hot' ? '🔥 Hot' : '✨ New'}</span>` : ''}
@@ -36,20 +38,38 @@ function renderProduct(containerId, items, limit) {
 
 //---__INIT__--
 
-renderProduct('home-prod',products,4)
-renderProduct('shop-prod',products)
+renderProduct('home-prod', products, 4)
+renderProduct('shop-prod', products)
 
 
+//---PRODUCT DETAIL PAGE---
+
+function thumbActive(tab) {
+    document.querySelectorAll('.pdp-thumb').forEach(a => a.classList.remove('active'));
+    tab.classList.add('active');
+}
 
 
+function openProduct(id) {
+    localStorage.setItem("productId", id);
+    window.location.href = "prod_detail.html";
+}
 
+function loadProductDetails() {
+    const id = Number(localStorage.getItem("productId"));
+    const currentProduct = products.find(p => p.id === id);
+    if (!currentProduct) return;
+    document.getElementById("pdp-name").textContent = currentProduct.name;
+    document.getElementById("pdp-price").textContent = "₹" + currentProduct.price;
+    document.getElementById("pdp-category").textContent = currentProduct.category;
+    document.getElementById("pdp-size").textContent = "Size " + currentProduct.size;
+    document.getElementById("pdp-condition").textContent = currentProduct.condition;
+    document.getElementById("pdp-main-img").textContent = currentProduct.emoji;
+}
 
-
-
-
-
-
-
+if (document.getElementById("pdp-name")) {
+    loadProductDetails();
+}
 
 
 //---RESPONSIVE NAV BAR---
