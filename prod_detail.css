@@ -1,0 +1,389 @@
+   :root {
+       --bg: #F5EFE6;
+       --bg2: #EDE0CC;
+       --cream: #FAF6F0;
+       --terra: #C0634A;
+       --terra-h: #6B4C3B;
+       --terra-l: #D9856E;
+       --olive: #5C6B3A;
+       --olive-l: #7A8C50;
+       --brown: #2E1F14;
+       --brown-m: #6B4C3B;
+       --brown-s: #7A6252;
+       --border: #D9C9B5;
+       --font-h: 'Playfair Display', serif;
+       --font-b: 'DM Sans', sans-serif;
+   }
+
+   body {
+       background: var(--bg);
+       font-family: var(--font-b);
+       font-weight: 300;
+       overflow-x: hidden;
+   }
+
+   * {
+       margin: 0px;
+       padding: 0px;
+   }
+
+   ul {
+       display: flex;
+       list-style-type: none;
+       gap: 3.0rem;
+   }
+
+   ul li a {
+       text-decoration: none;
+       font-size: 16px;
+       color: var(--brown-s);
+   }
+
+   .head {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       padding-left: 19px;
+       position: fixed;
+       height: 70px;
+       width: 100%;
+       background-color: var(--bg);
+       border-bottom: 1px solid var(--border);
+       z-index: 1000;
+   }
+
+   .Dobaara {
+       color: var(--terra);
+       font-size: 2.3rem;
+       font-weight: 400;
+   }
+
+   .cart {
+       display: inline;
+       font-size: larger;
+       padding-right: 15px;
+       cursor: pointer;
+       position: relative;
+   }
+
+   .cart-badge {
+       position: absolute;
+       top: -9px;
+       right: 9px;
+       background: var(--terra);
+       color: #fff;
+       font-size: 9px;
+       width: 14px;
+       height: 14px;
+       border-radius: 50%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-weight: 500;
+   }
+
+   .signup {
+       border-radius: 25px;
+       background-color: var(--terra);
+       color: var(--bg);
+       font-weight: 600;
+       font-size: 13px;
+       padding: 7px 16px;
+       transition: all 0.2s;
+       margin: 15px;
+       border: 1px solid var(--terra);
+   }
+
+   .signup:hover {
+       background-color: var(--terra-h);
+       border: 1px solid var(--terra-h);
+       cursor: pointer;
+       transform: translateY(-1px);
+   }
+
+   .login {
+       border-radius: 25px;
+       border: 1px solid var(--terra);
+       color: var(--terra);
+       font-weight: 600;
+       font-size: 13px;
+       padding: 7px 16px;
+       transition: all 0.2s;
+       background-color: var(--bg);
+   }
+
+   .login:hover {
+       background-color: var(--terra);
+       color: var(--bg);
+       transform: translateY(-1px);
+       cursor: pointer;
+   }
+
+   .signup-laptop {
+       border-radius: 25px;
+       background-color: var(--terra);
+       color: var(--bg);
+       font-weight: 600;
+       font-size: 13px;
+       padding: 7px 16px;
+       transition: all 0.2s;
+       margin: 15px;
+       border: 1px solid var(--terra);
+   }
+
+   .signup-laptop:hover {
+       background-color: var(--terra-h);
+       border: 1px solid var(--terra-h);
+       cursor: pointer;
+       transform: translateY(-1px);
+   }
+
+   .login-laptop {
+       border-radius: 25px;
+       border: 1px solid var(--terra);
+       color: var(--terra);
+       font-weight: 600;
+       font-size: 13px;
+       padding: 7px 16px;
+       transition: all 0.2s;
+       background-color: var(--bg);
+   }
+
+   .login-laptop:hover {
+       background-color: var(--terra);
+       color: var(--bg);
+       transform: translateY(-1px);
+       cursor: pointer;
+   }
+
+   .pdp-grid {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap: 60px;
+       padding: 10px 80px;
+   }
+
+   .pdp-main-img {
+       background-color: var(--bg2);
+       border-radius: 20px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 440px;
+       font-size: 100px;
+       margin-bottom: 20px;
+   }
+
+   .pdp-thumbs {
+       display: flex;
+       gap: 10px;
+   }
+
+   .pdp-thumb {
+       background-color: var(--bg2);
+       border-radius: 10px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 70px;
+       width: 70px;
+       font-size: 20px;
+       cursor: pointer;
+   }
+
+   .pdp-thumb.active {
+       border: 2px solid var(--terra);
+   }
+
+   .pdp-category {
+       font-size: 12px;
+       letter-spacing: .1em;
+       text-transform: uppercase;
+       color: var(--olive);
+       font-weight: 500;
+       margin-bottom: 8px;
+   }
+
+   .pdp-name {
+       font-family: var(--font-h);
+       font-size: 40px;
+       font-weight: 500;
+       margin-bottom: 6px;
+       line-height: 1.2;
+   }
+
+   .pdp-price {
+       font-size: 35px;
+       font-family: var(--font-h);
+       color: var(--terra);
+       margin-bottom: 20px;
+   }
+
+   .pdp-tags {
+       display: flex;
+       gap: 8px;
+       margin-bottom: 20px;
+       flex-wrap: wrap;
+   }
+
+   .pdp-tag {
+       border: 1px solid var(--border);
+       border-radius: 25px;
+       font-size: 12px;
+       padding: 4px 12px;
+       color: var(--brown-s);
+   }
+
+   .pdp-divider {
+       border: none;
+       border-top: 1px solid var(--border);
+       margin: 20px 0;
+   }
+
+   .pdp-label {
+       font-size: 12px;
+       letter-spacing: .08em;
+       text-transform: uppercase;
+       color: var(--brown-m);
+       margin-bottom: 8px;
+       font-weight: 600;
+   }
+
+   .pdp-desc {
+       font-size: 15px;
+       color: var(--brown-s);
+       line-height: 1.8;
+       margin-bottom: 20px;
+
+   }
+
+   .pdp-btns {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap: 15px;
+       margin-bottom: 20px;
+   }
+
+   .pdp-btn-save {
+       border-radius: 25px;
+       border: 1px solid var(--terra);
+       color: var(--terra);
+       font-weight: 600;
+       font-size: 13px;
+       padding: 10px 24px;
+       transition: all 0.2s;
+       background-color: var(--bg);
+       text-align: center;
+   }
+
+   .pdp-btn-save:hover {
+       background-color: var(--terra);
+       color: var(--bg);
+       transform: translateY(-1px);
+       cursor: pointer;
+   }
+
+   .pdp-btn-cart {
+       border-radius: 25px;
+       background-color: var(--terra);
+       color: var(--bg);
+       font-weight: 600;
+       font-size: 13px;
+       padding: 10px 24px;
+       transition: all 0.2s;
+       border: 1px solid var(--terra);
+       text-align: center;
+   }
+
+   .pdp-btn-cart:hover {
+       background-color: var(--terra-h);
+       border: 1px solid var(--terra-h);
+       cursor: pointer;
+       transform: translateY(-1px);
+   }
+
+   .seller-card {
+       display: flex;
+       align-items: center;
+       gap: 15px;
+       border: 1px solid var(--border);
+       border-radius: 20px;
+       padding: 15px;
+   }
+
+   .avatar {
+       background-color: var(--bg2);
+       height: 45px;
+       width: 45px;
+       border-radius: 50%;
+       font-size: 18px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .seller-name {
+       font-size: 14px;
+       font-weight: 500;
+   }
+
+   .seller-meta{
+       font-size: 12px;
+       color: var(--brown-s);
+   }
+
+   .menu {
+       fill: var(--brown-s);
+       align-self: center;
+   }
+
+   .sidebar {
+       height: fit-content;
+       width: 200px;
+       display: none;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: flex-start;
+       gap: 25px;
+       position: fixed;
+       top: 0;
+       right: 0;
+       background-color: #f5efe600;
+       backdrop-filter: blur(9px);
+       z-index: 999;
+       padding: 15px 0 0 20px;
+
+   }
+
+
+   @media(max-width:700px) {
+       .button {
+           display: flex;
+           align-items: center;
+           gap: 15px;
+       }
+
+       .laptop-nav {
+           display: none;
+       }
+
+       .login-laptop,
+       .signup-laptop {
+           display: none;
+       }
+
+       .Dobaara {
+           margin-left: -35px;
+       }
+   }
+
+   @media(min-width:700px) {
+       .menu {
+           display: none;
+       }
+
+       .login,
+       .signup {
+           display: none;
+       }
+   }

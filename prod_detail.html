@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobaara — Wear It Again</title>
+    <link rel="stylesheet" href="prod_detail.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <span class="Dobaara">Dobaara</span>
+            <ul class="sidebar">
+                <li onclick=Hidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#7A6252"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="Sell.html">Sell</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><button class="login" onclick="window.location.href='signup.html'">Login</button><button class="signup" onclick="window.location.href='signup.html'">Sign up</button></li>
+            </ul>
+            <ul class="laptop-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="Sell.html">Sell</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+            <div class="button">
+                <div class="cart" onclick="window.location.href='Cart.html'">🛒<span class="cart-badge">0</span></div>
+                <div class="menu" onclick=Sidebar()><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+                <button class="login-laptop" onclick="window.location.href='signup.html'">Login</button>
+                <button class="signup-laptop" onclick="window.location.href='signup.html'">Sign up</button>
+            </div>
+        </div>
+    </header>
+    <section style="position: relative;top: 71px;">
+        <div style="padding: 30px 80px;font-size: 13px;color:#7A6252;cursor: pointer;" onclick="window.location.href='Shop.html'">&larr; Back to shop</div>
+        <div class="pdp-grid">
+            <div class="pdp-img">
+                <div class="pdp-main-img" id="pdp-main-img">🧥</div>
+                <div class="pdp-thumbs">
+                    <div class="pdp-thumb active" onclick="thumbActive(this)">🧥</div>
+                    <div class="pdp-thumb" onclick="thumbActive(this)">📷</div>
+                    <div class="pdp-thumb" onclick="thumbActive(this)">🔍</div>
+                </div>
+            </div>
+            <div class="pdp-info">
+                <div class="pdp-category" id="pdp-category">Jackets</div>
+                <div class="pdp-name" id="pdp-name">Winter Coat</div>
+                <div class="pdp-price" id="pdp-price">₹680</div>
+                <div class="pdp-tags">
+                    <div class="pdp-tag" id="pdp-size">Size L</div>
+                    <div class="pdp-tag" id="pdp-condition">Good</div>
+                    <div class="pdp-tag">✅ Verified</div>
+                    <div class="pdp-tag">♻️ Sustainable</div>
+                </div>
+                <hr class="pdp-divider">
+                <div class="pdp-label">Description</div>
+                <p class="pdp-desc" id="pdp-desc">Barely worn denim jacket in excellent condition. No stains, no tears. Perfect for layering over any outfit. A wardrobe essential at a fraction of retail price.</p>
+                <div class="pdp-btns">
+                    <div class="pdp-btn-cart">Add to cart 🛒</div>
+                    <div class="pdp-btn-save">Save ♡</div>
+                </div>
+                <div class="seller-card">
+                    <div class="avatar">👤</div>
+                    <div class="seller-info">
+                        <div class="seller-name">Verified Seller</div>
+                        <div class="seller-meta">⭐ Trusted · 12 items sold</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
