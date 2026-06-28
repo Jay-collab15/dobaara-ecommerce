@@ -1,6 +1,6 @@
 //---DATA---
 
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 let currentProduct = null;
 const products = [
     { id: 1, name: 'Denim Jacket', category: 'Jackets', size: 'M', condition: 'Like new', price: 450, emoji: '👕', badge: 'hot' },
@@ -28,7 +28,7 @@ function renderProduct(containerId, items, limit) {
           <div class="prod-meta">Size ${p.size} · ${p.condition}</div>
           <div class="prod-bottom">
             <span class="prod-price">₹${p.price}</span>
-            <button class="prod-cart-button" >+</button>
+            <button class="prod-cart-button" onclick="event.stopPropagation();addToCart(${p.id})">+</button>
           </div>
         </div>
       </div>
@@ -107,6 +107,25 @@ document.addEventListener('click', function (e) {
 });
 
 
+//---CART---
+
+function addToCart(id){
+    const p=products.find(x=>x.id===id);
+    if(!p) return;
+    const existing=cart.find(x=>x.id===id);
+    if(existing) existing.qty++;
+    else cart.push({...p,qty:1});
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartBadge();
+    showToast('🛒'+p.name+'added to cart!');
+}
+function updateCartBadge() {
+    const total = cart.reduce((a, c) => a + c.qty, 0);
+    const badge = document.getElementById("cart-count");
+    if (badge)badge.textContent = total;
+}
+
+
 //---SIGNUP PAGE---
 
 function switchTab(tab, el) {
@@ -133,3 +152,8 @@ function showToast(msg) {
     t.classList.add('show');
     setTimeout(() => t.classList.remove('show'), 2600);
 }
+
+
+//---__---
+
+updateCartBadge();
